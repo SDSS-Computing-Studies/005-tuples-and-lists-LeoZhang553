@@ -21,8 +21,8 @@ Enter the replacement:Dan
 """
 people=['Alain', 'Brian', 'Chris', 'Justin', 'Angela', 'Rick']
 print(people)
-P1=input('Choose a person from the list to replace: ')
-P2=input('Enter the replacement: ')
+P1=(input('Choose a person from the list to replace: ')).strip()
+P2=(input('Enter the replacement: ')).strip()
 dIndex=people.index(P1)
 people.remove(P1)
 people.insert(dIndex,P2)

@@ -26,7 +26,7 @@ word not in list
 
 fruit = ["apple","cherry","kiwi","apple","banana","strawberry","kiwi","blueberry","kiwi"]
 print(fruit)
-Word=input('Enter a word from the list: ')
+Word=(input('Enter a word from the list: ')).strip()
 dCount = fruit.count(Word)
 if dCount != 0:
     while fruit.count(Word) != 0:
